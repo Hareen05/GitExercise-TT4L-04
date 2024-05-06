@@ -8,9 +8,10 @@ body {
     padding: 20px;
     background-color:rgb(69, 1, 60);
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.989);
 }
 .signup-container h2 {
+    color: #ccc;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -25,7 +26,7 @@ body {
     box-sizing: border-box;
 }
 .signup-container button[type="submit"] {
-    background-color: #4CAF50;
+    background-color: #000000;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -34,9 +35,13 @@ body {
     width: 100%;
 }
 .signup-container button[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #710071;
 }
 .signup-container p {
     text-align: center;
     margin-top: 15px;
+    color: #f2f2f2;
+}
+.signup-container a {
+    color: #ccc;
 }
