@@ -10,3 +10,9 @@ document.querySelector('#user-icon').onclick = () =>{
   user.classList.toggle('active');
   search.classList.toggle('active');
 }
+
+
+
+
+
+
