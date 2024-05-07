@@ -1,5 +1,3 @@
-
-Copy code
 <!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
@@ -12,7 +10,7 @@ Copy code
         transform: translateY(-50%);
         right: 20px;
         bottom: 20%;
-        background-color: transparent; 
+        background-color: rgba(0, 0, 0, 0.5);
         padding: 10px;
         border-radius: 5px;
         display: none; 
@@ -28,27 +26,19 @@ Copy code
         color: white;
         cursor: pointer;
     }
+
+    .popup-bar:target {
+        display: block;
+    }
 </style>
 </head>
 <body>
 
 <div class="popup-bar" id="popupBar">
     <div class="popup-content">
-        Shoppinng Cart. <span class="close-button" onclick="togglePopup()">Close</span>
+        Shopping Cart. <a href="#">Close</a>
     </div>
 </div>
-
-<script>
-
-    function togglePopup() {
-        var popup = document.getElementById("popupContainer");
-        if (popup.style.display === "block") {
-            popup.style.display = "none";
-        } else {
-            popup.style.display = "block";
-        }
-    }
-</script>
 
 </body>
 </html>
