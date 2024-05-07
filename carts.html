@@ -1,0 +1,54 @@
+
+Copy code
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Popup Bar with Transparent Background</title>
+<style>
+    .popup-bar {
+        position: fixed;
+        top: 20%;
+        transform: translateY(-50%);
+        right: 20px;
+        bottom: 10%;
+        background-color: transparent; 
+        padding: 10px;
+        border-radius: 5px;
+        display: none; 
+        z-index: 9999;
+    }
+
+    .popup-content {
+        color: white;
+        text-align: center;
+    }
+
+    .close-button {
+        color: white;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+
+<div class="popup-bar" id="popupBar">
+    <div class="popup-content">
+        Shoppinng Cart. <span class="close-button" onclick="togglePopup()">Close</span>
+    </div>
+</div>
+
+<script>
+
+    function togglePopup() {
+        var popup = document.getElementById("popupContainer");
+        if (popup.style.display === "block") {
+            popup.style.display = "none";
+        } else {
+            popup.style.display = "block";
+        }
+    }
+</script>
+
+</body>
+</html>
