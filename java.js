@@ -9,6 +9,7 @@ let user = document.querySelector('.user');
 document.querySelector('#user-icon').onclick = () =>{
   user.classList.toggle('active');
   search.classList.toggle('active');
+
 }
 
 document.getElementById('addProductButton').onclick = function() {
@@ -19,6 +20,7 @@ document.getElementById('addProductButton').onclick = function() {
       form.style.display = 'none';
   }
 };
+
 
 
 
